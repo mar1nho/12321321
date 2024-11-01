@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "build:tailwind": "tailwindcss -i ./src/input.css -o ./src/output.css",
+    "build": "npm run build:tailwind && next build"
   },
   "keywords": [],
   "author": "",
@@ -12,4 +13,5 @@
   "devDependencies": {
     "tailwindcss": "^3.4.14"
   }
+  
 }
